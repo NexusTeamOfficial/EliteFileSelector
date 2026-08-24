@@ -1,0 +1,55 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@android:color/white">
+	<com.google.android.material.appbar.MaterialToolbar
+		android:id="@+id/toolbar"
+		android:layout_width="match_parent"
+		android:background="@color/purple_500"
+		android:layout_height="?attr/actionBarSize"
+		app:titleTextColor="@android:color/white"
+		app:menu="@menu/file_picker_menu" />
+	<LinearLayout
+		android:id="@+id/linear8"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="@color/gray_light"
+		android:orientation="horizontal">
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="←"
+			android:textSize="20sp"
+			style="@style/Widget.AppCompat.Button.Borderless" />
+		<TextView
+			android:id="@+id/tvCurrentPath"
+			android:focusable="false"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:text="Internal Storage"
+			android:textSize="13sp"
+			android:layout_weight="1" />
+	</LinearLayout>
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvFiles"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:padding="4dp"
+		android:layout_weight="1" />
+	<TextView
+		android:id="@+id/tvEmptyState"
+		android:focusable="false"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal|center_vertical"
+		android:text="No files found"
+		android:textSize="18sp"
+		android:visibility="gone" />
+</LinearLayout>

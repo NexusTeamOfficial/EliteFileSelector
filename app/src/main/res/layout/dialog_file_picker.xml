@@ -1,0 +1,56 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp"
+	android:minHeight="400dp">
+	<LinearLayout
+		android:id="@+id/linear6"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+		<TextView
+			android:id="@+id/tvTitle"
+			android:focusable="false"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="Select Files"
+			android:textSize="18sp"
+			android:textStyle="bold"
+			android:layout_weight="1" />
+		<com.google.android.material.button.MaterialButton
+			android:id="@+id/btnCancel"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Cancel"
+			android:textSize="12sp"
+			style="@style/Widget.AppCompat.Button.Borderless" />
+	</LinearLayout>
+	<TextView
+		android:id="@+id/tvCurrentPath"
+		android:focusable="false"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="8dp"
+		android:background="@drawable/border_background"
+		android:text="Internal Storage"
+		android:textSize="12sp"
+		android:layout_marginVertical="8dp" />
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/rvFiles"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:padding="4dp"
+		android:layout_weight="1" />
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/btnDone"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:text="Done"
+		android:textSize="12sp" />
+</LinearLayout>
