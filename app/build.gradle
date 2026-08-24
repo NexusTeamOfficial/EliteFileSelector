@@ -52,7 +52,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.github.NexusTeamOfficial'
                 artifactId = 'EliteFileSelector'
-                version = project.version
+                version = System.getenv('VERSION') ?: '1.0.5'
             }
         }
     }
