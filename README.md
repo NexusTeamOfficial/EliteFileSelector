@@ -21,11 +21,11 @@ Add the dependency to your app module's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.5'
+    implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.6'
 }
 ```
 
-If `1.0.5` has not appeared in JitPack yet, use the verified earlier release temporarily:
+If `1.0.6` has not appeared in JitPack yet, use the verified earlier release temporarily:
 
 ```gradle
 implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.3'
@@ -295,7 +295,7 @@ The library manifest declares the storage and media permissions needed by its fi
 |---|---|
 | Group ID | `com.github.NexusTeamOfficial` |
 | Artifact ID | `EliteFileSelector` |
-| Recommended version | `1.0.5` |
+| Recommended version | `1.0.6` |
 | Verified fallback | `1.0.3` |
 | Minimum SDK | 21 |
 
