@@ -21,14 +21,14 @@ Add the dependency to your app module's `build.gradle`:
 
 ```gradle
 dependencies {
-    implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.0'
+    implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.1'
 }
 ```
 
 You can also use a Git tag or commit supported by JitPack, for example:
 
 ```gradle
-implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.0'
+implementation 'com.github.NexusTeamOfficial:EliteFileSelector:1.0.1'
 ```
 
 ## Usage
@@ -88,7 +88,7 @@ The exact callback signatures can be checked in `callback/FilePickerCallback.jav
 |---|---|
 | Group ID | `com.github.NexusTeamOfficial` |
 | Artifact ID | `EliteFileSelector` |
-| Version | `1.0.0` |
+| Version | `1.0.1` |
 | Minimum SDK | 21 |
 
 ## License
